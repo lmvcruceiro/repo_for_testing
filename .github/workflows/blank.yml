@@ -34,7 +34,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-
+          
+      # Runs a set of commands for getting the branch name
       - name: Get branch name
-        run: echo github.ref_name
+        run: |
+          echo running on branch $GITHUB_REF_NAME
+          echo running on branch ${GITHUB_REF_NAME}
+          echo running on branch ${GITHUB_REF##*/}
           
