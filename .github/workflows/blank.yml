@@ -43,4 +43,6 @@ jobs:
           echo running on branch ${GITHUB_REF##*/}
           echo running on branch $GITHUB_HEAD_REF
           echo running on branch $GITHUB_BASE_REF
+          echo running on branch ${{ github.event }}
+          echo running on branch ${{ github.ref_name }}
           
