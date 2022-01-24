@@ -38,15 +38,15 @@ jobs:
       # Runs a set of commands for getting the branch name
       - name: Get branch name
         run: |
-          echo running on branch $GITHUB_REF_NAME
-          echo running on branch ${GITHUB_REF_NAME}
-          echo running on branch ${GITHUB_REF##*/}
-          echo running on branch $GITHUB_HEAD_REF
-          echo running on branch $GITHUB_BASE_REF
-          echo running on branch ${{ github.event }}
-          echo running on branch ${{ github.ref_name }}
-          echo running on branch ${{ github.base_ref }}
-          echo running on branch ${{ github.head_ref }}
-          echo running on branch ${{ github.base_ref }}
-          echo running on branch ${{ github.ref }}
+          echo running on branch for getting GITHUB_REF_NAME $GITHUB_REF_NAME
+          echo running on branch for getting GITHUB_REF_NAME ${GITHUB_REF_NAME}
+          echo running on branch for getting GITHUB_REF ${GITHUB_REF##*/}
+          echo running on branch for getting GITHUB_HEAD_REF $GITHUB_HEAD_REF
+          echo running on branch for getting GITHUB_BASE_REF $GITHUB_BASE_REF
+          echo running on branch for getting event ${{ github.event }}
+          echo running on branch for getting ref_name ${{ github.ref_name }}
+          echo running on branch for getting base_ref ${{ github.base_ref }}
+          echo running on branch for getting head_ref ${{ github.head_ref }}
+          echo running on branch for getting base_ref ${{ github.base_ref }}
+          echo running on branch for getting ref ${{ github.ref }}
           
